@@ -1,7 +1,3 @@
-WITH variables (VAR_1, VAR_2) as (
-   values (5, 'foo')
-)
-
 
 SELECT *
 FROM 
@@ -20,7 +16,7 @@ FROM
 		
 		ORDER BY a.person_id, drug_exposure_start_date ASC) AS foo
 	ORDER BY drug_exposure_start_date, pattern) AS foo
-ORDER BY person_id
+ORDER BY person_id,drug_exposure_start_date
 
 
  
